@@ -1,13 +1,13 @@
 ---
-competition_name: "ECSC 2022 | Attack-Defense"
+competition_name: "Cyberlandslaget 2023 | Attack-Defense"
 # dates in UTC, Vienna local time is 2h later
-services_public: '2022-09-04 19:00:00+00' # TODO change
-event_start:     '2023-09-04 19:50:00+00' # TODO change
-event_freeze:    '2023-09-04 19:54:00+00'
-event_end:       '2023-09-04 19:59:00+00'
+services_public: '2020-00-00 00:00:00+00'
+event_start:     '2023-00-00 00:00:00+00'
+event_freeze:    '2024-00-00 00:00:00+00'
+event_end:       '2025-00-00 00:00:00+00'
 tick_duration: 60 # TODO change
 valid_ticks: 5 # NOTE: changing this value also requires adjusting the checkerlib and the scoreboard
-flag_prefix: 'ECSC_'
+flag_prefix: 'CYBL_'
 
 gamedb_host: gameserver-postgres
 pgpassword: 9iyzXY6pMYzRvXZi
@@ -43,36 +43,6 @@ game_services:
 teams: # TODO replace passwords with proper ones
   - {id: 1337, name: 'admin'                        , email: 'admin@example.com',  pass: 'admin',  logo: '', admin: True}
   - {id:    1, name: 'nop'                          , email: 'team01@example.com', pass: 'nop',    logo: '', nop: True}
-  - {id:    2, name: 'Austria'                      , email: 'team02@example.com', pass: 'team02', logo: '/assets/flags/AT.svg'}
-  - {id:    3, name: 'Belgium'                      , email: 'team03@example.com', pass: 'team03', logo: '/assets/flags/BE.svg'}
-  - {id:    4, name: 'Croatia'                      , email: 'team04@example.com', pass: 'team04', logo: '/assets/flags/HR.svg'}
-  - {id:    5, name: 'Cyprus'                       , email: 'team05@example.com', pass: 'team05', logo: '/assets/flags/CY.svg'}
-  - {id:    6, name: 'Czechia'                      , email: 'team06@example.com', pass: 'team06', logo: '/assets/flags/CZ.svg'}
-  - {id:    7, name: 'Denmark'                      , email: 'team07@example.com', pass: 'team07', logo: '/assets/flags/DK.svg'}
-  - {id:    8, name: 'Estonia'                      , email: 'team08@example.com', pass: 'team08', logo: '/assets/flags/EE.svg'}
-  - {id:    9, name: 'Finland'                      , email: 'team09@example.com', pass: 'team09', logo: '/assets/flags/FI.svg'}
-  - {id:   10, name: 'France'                       , email: 'team10@example.com', pass: 'team10', logo: '/assets/flags/FR.svg'}
-  - {id:   11, name: 'Germany'                      , email: 'team11@example.com', pass: 'team11', logo: '/assets/flags/DE.svg'}
-  - {id:   12, name: 'Greece'                       , email: 'team12@example.com', pass: 'team12', logo: '/assets/flags/GR.svg'}
-  - {id:   13, name: 'Hungary'                      , email: 'team13@example.com', pass: 'team13', logo: '/assets/flags/HU.svg'}
-  - {id:   14, name: 'Iceland'                      , email: 'team14@example.com', pass: 'team14', logo: '/assets/flags/IS.svg'}
-  - {id:   15, name: 'Ireland'                      , email: 'team15@example.com', pass: 'team15', logo: '/assets/flags/IE.svg'}
-  - {id:   16, name: 'Italy'                        , email: 'team16@example.com', pass: 'team16', logo: '/assets/flags/IT.svg'}
-  - {id:   17, name: 'Liechtenstein'                , email: 'team17@example.com', pass: 'team17', logo: '/assets/flags/LI.svg'}
-  - {id:   18, name: 'Luxembourg'                   , email: 'team18@example.com', pass: 'team18', logo: '/assets/flags/LU.svg'}
-  - {id:   19, name: 'Malta'                        , email: 'team19@example.com', pass: 'team19', logo: '/assets/flags/MT.svg'}
-  - {id:   20, name: 'Netherlands'                  , email: 'team20@example.com', pass: 'team20', logo: '/assets/flags/NL.svg'}
-  - {id:   21, name: 'Norway'                       , email: 'team21@example.com', pass: 'team21', logo: '/assets/flags/NO.svg'}
-  - {id:   22, name: 'Poland'                       , email: 'team22@example.com', pass: 'team22', logo: '/assets/flags/PL.svg'}
-  - {id:   23, name: 'Portugal'                     , email: 'team23@example.com', pass: 'team23', logo: '/assets/flags/PT.svg'}
-  - {id:   24, name: 'Romania'                      , email: 'team24@example.com', pass: 'team24', logo: '/assets/flags/RO.svg'}
-  - {id:   25, name: 'Slovakia'                     , email: 'team25@example.com', pass: 'team25', logo: '/assets/flags/SK.svg'}
-  - {id:   26, name: 'Slovenia'                     , email: 'team26@example.com', pass: 'team26', logo: '/assets/flags/SI.svg'}
-  - {id:   27, name: 'Spain'                        , email: 'team27@example.com', pass: 'team27', logo: '/assets/flags/ES.svg'}
-  - {id:   28, name: 'Sweden'                       , email: 'team28@example.com', pass: 'team28', logo: '/assets/flags/SE.svg'}
-  - {id:   29, name: 'Switzerland'                  , email: 'team29@example.com', pass: 'team29', logo: '/assets/flags/CH.svg'}
-  - {id:   30, name: 'Canada (guest)'               , email: 'team30@example.com', pass: 'team30', logo: '/assets/flags/CA.svg', aff: 'guest'}
-  - {id:   31, name: 'Israel (guest)'               , email: 'team31@example.com', pass: 'team31', logo: '/assets/flags/IL.svg', aff: 'guest'}
-  - {id:   32, name: 'Serbia (guest)'               , email: 'team32@example.com', pass: 'team32', logo: '/assets/flags/RS.svg', aff: 'guest'}
-  - {id:   33, name: 'USA (guest)'                  , email: 'team33@example.com', pass: 'team33', logo: '/assets/flags/US.svg', aff: 'guest'}
-  - {id:   34, name: 'United Arab Emirates (guest)' , email: 'team34@example.com', pass: 'team34', logo: '/assets/flags/AE.svg', aff: 'guest'}
+  - {id:    2, name: 'Norway'                       , email: 'team02@example.com', pass: 'team02', logo: '/assets/flags/NO.svg'}
+  - {id:    3, name: 'Sweden'                       , email: 'team03@example.com', pass: 'team03', logo: '/assets/flags/SE.svg'}
+  - {id:    4, name: 'Denmark'                      , email: 'team04@example.com', pass: 'team04', logo: '/assets/flags/DK.svg'}
